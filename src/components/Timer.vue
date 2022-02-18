@@ -34,11 +34,11 @@
         if (endTime < now) {
           return "00:00:00";
         }
-        const diff = endTime - now;
+        const diff = endTime - now + 999;
         return [
           Math.floor(Math.abs(diff) / (60 * 60 * 1000)),
-          Math.floor(Math.abs(diff) / (60 * 1000)),
-          Math.ceil(Math.abs(diff) / 1000) % 60,
+          Math.floor(Math.abs(diff) / (60 * 1000)) % 60,
+          Math.floor(Math.abs(diff) / 1000) % 60,
           ]
           .map((n) => n.toString().padStart(2, '0'))
           .join(':');
