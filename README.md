@@ -1,10 +1,24 @@
 # kusocode-rank-app
 
-個人研究用クソコード置き場（スピードアップコンテストのネタにするようなやつ）の得点掲示板サンプルです。
+## Project setup
+```
+yarn install
+```
 
-- Vue3 で雑に作ってあります
-- `dist` に生成されたファイルをどこかの Web サーバなり S3 静的ホスティングなりにアップロードします
-- `time.json` にコンテストの開始日時〜終了日時を入れます
-  - 途中で変更があったら上書き更新します
-- `score.json` に各チームのスコアを入れます
-  - ベンチマーク書き込み先の DB テーブルから値を拾って Web サーバや S3 バケットなどにアップロードする `cron` や Lambda 関数を作って定期実行します
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Lints and fixes files
+```
+yarn lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

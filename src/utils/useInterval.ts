@@ -2,6 +2,7 @@ import { onBeforeUnmount } from "vue";
 
 // ソースはこちら
 // https://github.com/ics-creative/210929_vue_composition/blob/master/src/samples/04_time/useInterval.ts
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const useInterval = (f: () => void, ms: number) => {
   /** タイマー */
   const timer = window.setInterval(f, ms);
