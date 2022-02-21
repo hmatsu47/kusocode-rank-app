@@ -1,33 +1,27 @@
 <template>
   <div class="title">
     <h1>
-      社内 ISUCON #1 : <p class="unko">クソコード</p>を直せ！
+      社内 ISUCON #1 :
+      <p class="unko">クソコード</p>
+      を直せ！
     </h1>
   </div>
   <div class="clock">
     <div>
-      <h2>
-        現在の時刻
-      </h2>
+      <h2>現在の時刻</h2>
     </div>
-    <Clock class="time"/>
+    <Clock class="time" />
   </div>
   <div class="timer">
     <div>
-      <h2>
-        残り時間
-      </h2>
+      <h2>残り時間</h2>
     </div>
-    <Timer class="time"/>
+    <Timer class="time" />
   </div>
   <div class="rank">
     <div>
-      <h2>
-        現在のランキング
-      </h2>
-      <h3 class="notice">
-        （注）終了30分前以降は更新されません
-      </h3>
+      <h2>現在のランキング</h2>
+      <h3 class="notice">（注）終了30分前以降は更新されません</h3>
     </div>
     <RankChart />
   </div>
@@ -57,7 +51,6 @@ export default defineComponent({
     color: brown;
     display: inline;
   }
-  
 }
 .clock {
   text-align: center;
